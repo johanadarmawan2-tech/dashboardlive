@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard Live Streaming</title>
+    <title>Dashboard Live IndoFinity</title>
     <style>
         body, html {
             margin: 0;
@@ -10,33 +10,32 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: transparent; /* Membuat background tembus pandang */
+            background-color: transparent; /* Membuat latar belakang tembus pandang */
         }
 
+        /* Mengatur layout grid untuk 4 widget IndoFinity */
         .dashboard-container {
-            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 Kolom */
+            grid-template-rows: 1fr 1fr;    /* 2 Baris */
             width: 100vw;
             height: 100vh;
+            gap: 10px; /* Jarak antar widget agar tidak mepet */
+            padding: 10px;
+            box-sizing: border-box;
         }
 
         iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             border: none;
-            background: transparent; /* Menghilangkan kotak putih bawaan browser */
-            pointer-events: none; /* Agar tidak mengganggu klik di aplikasi */
+            background: transparent; 
         }
     </style>
 </head>
 <body>
 
     <div class="dashboard-container">
-        <iframe src="https://saweria.co/widgets/milestone?streamKey=3160e6490dd0218583b98d35031114fa"></iframe>
-        <iframe src="https://saweria.co/widgets/alert?streamKey=3160e6490dd0218583b98d35031114fa"></iframe>
-        <iframe src="https://saweria.co/widgets/mediashare?streamKey=3160e6490dd0218583b98d35031114fa"></iframe>
         <iframe src="https://widgets.indofinity.com/widgets/overlay/d0fa5c1f-37e0-4e15-bdc8-3b462738c48c?screen=1"></iframe>
         <iframe src="https://widgets.indofinity.com/widgets/overlay/d0fa5c1f-37e0-4e15-bdc8-3b462738c48c?screen=2"></iframe>
         <iframe src="https://widgets.indofinity.com/widgets/likes/d0fa5c1f-37e0-4e15-bdc8-3b462738c48c"></iframe>

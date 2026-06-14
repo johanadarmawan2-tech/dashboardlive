@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Live Streaming</title>
+    <style>
+        /* Mengatur tampilan dasar layar */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000; /* Latar belakang hitam */
+        }
+
+        /* Mengatur tata letak grid (kotak-kotak) */
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Membagi layar menjadi 2 kolom sama besar */
+            grid-template-rows: 1fr 1fr;    /* Membagi layar menjadi 2 baris sama besar */
+            width: 100vw;
+            height: 100vh;
+            gap: 5px; /* Jarak antar web source */
+        }
+
+        /* Mengatur frame web agar penuh di setiap kotaknya */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <iframe src="https://saweria.co/widgets/milestone?streamKey=3160e6490dd0218583b98d35031114fa"></iframe>
+        <iframe src="https://saweria.co/widgets/alert?streamKey=3160e6490dd0218583b98d35031114fa"></iframe>
+        <iframe src="https://saweria.co/widgets/mediashare?streamKey=3160e6490dd0218583b98d35031114fa"></iframe>
+        <iframe src="https://widgets.indofinity.com/widgets/overlay/d0fa5c1f-37e0-4e15-bdc8-3b462738c48c?screen=1"></iframe>
+        <iframe src="https://widgets.indofinity.com/widgets/overlay/d0fa5c1f-37e0-4e15-bdc8-3b462738c48c?screen=2"></iframe>
+        <iframe src="https://widgets.indofinity.com/widgets/likes/d0fa5c1f-37e0-4e15-bdc8-3b462738c48c"></iframe>
+        <iframe src="https://widgets.indofinity.com/widgets/youtube/d0fa5c1f-37e0-4e15-bdc8-3b462738c48c"></iframe>
+    </div>
+
+</body>
+</html>
